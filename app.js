@@ -23,3 +23,4 @@ app.get('/fib', (req, res) => {
 });
 
 module.exports = app;
+// exports.handler = serverlessExpress({ app })
