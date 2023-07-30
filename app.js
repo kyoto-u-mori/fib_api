@@ -14,10 +14,11 @@ const convertStringToNumber = n => {
 app.get('/fib', (req, res) => {
   const n = convertStringToNumber(req.query.n);
   try {
-    const result = fibonacci(n);
-    res.json({ result });
+    const fib_result = fibonacci(n);
+    resValue = fib_result.toString(); //桁数が溢れた時のため文字列に変換(要検討)
+    res.json({'result':resValue});
   } catch (error) {
-    res.status(400).json({ status: 400, message: 'Bad request.' });
+    res.status(400).json({ 'status': 400, 'message': 'Bad request.' });
   }
 });
 

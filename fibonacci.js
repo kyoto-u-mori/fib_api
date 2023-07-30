@@ -4,25 +4,25 @@ function fibonacci(n) {
     if ((typeof n) !== 'number' || n <= 0) {
       throw new Error('Invalid input. n must be a positive integer.');
     }
-  
-    if (n === 1) {
-      return 0;
+    //初期値の処理
+    else if (n === 1) {
+      return 1n;
     }
-  
-    if (n === 2) {
-      return 1;
+    else if (n === 2) {
+      return 1n;
     }
-  
-    let prev = 0;
-    let current = 1;
-  
-    for (let i = 3; i <= n; i++) {
-      const next = prev + current;
-      prev = current;
-      current = next;
+    else {
+        let prev = 1n;
+        let current = 1n;
+      
+        for (let i = 3; i <= n; i++) {
+          const next = prev + current;
+          prev = current;
+          current = next;
+        }
+        return current;
     }
-  
-    return current;
+
   }
   
   module.exports = fibonacci;
