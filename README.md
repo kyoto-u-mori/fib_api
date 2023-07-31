@@ -5,7 +5,7 @@
 ## 概要
 ### fib-api-local
 * ローカル実行用のフォルダ
-* fib-api-localにおいてnode app.jsを実行するとhttp://localhost:3000にAPIが作られる
+* fib-api-localにおいてnode app.jsを実行するとhttp://localhost:3000 にAPIが作られる
 * app.js: APIの設定
 * fibonacci.js: 指定したn番目のフィボナッチ数をbigIntで返す関数
 * fib-api-local/test/app.test.js: fib-api-localにおいてnpm run testを実行
