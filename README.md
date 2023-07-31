@@ -1,6 +1,8 @@
 # fib_api
 **(主にドキュメントとソースコードのコメントについて、現在修正をしております。完了し次第READMEに記載致します。(7/31 9:20))**
 
+**(修正が完了いたしました。お待たせしてしまい申し訳ありません。(7/31 13:14))**
+
 指定したn番目のフィボナッチ数を返すREST API
 ## 概要
 ### fib-api-local
@@ -29,5 +31,12 @@ https://n0h5hzs4b3.execute-api.us-east-1.amazonaws.com/fib?n=10
 ~~~
 curl -X GET -H "Content-Type: applicat
 ion/json" "https://n0h5hzs4b3.execute-api.us-east-1.amazonaws.com/fib?n=10"
-
 ~~~~
+レスポンス例
+~~~
+{
+
+      "result": "55"
+
+}
+~~~
