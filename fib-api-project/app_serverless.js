@@ -12,6 +12,7 @@ const convertStringToNumber = n => {
   return isNaN( num ) ? false : num;
 }
 
+//ルートでメッセージを出力
 app.get("/", (req, res, next) => {
   return res.status(200).json({
     message: "Hello from root!",

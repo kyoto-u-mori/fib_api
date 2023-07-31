@@ -1,5 +1,3 @@
-// fibonacci.js
-
 function fibonacci(n) {
     if ((typeof n) !== 'number' || n <= 0) {
       throw new Error('Invalid input. n must be a positive integer.');
